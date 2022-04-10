@@ -8,6 +8,7 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="author" content="RPL" />
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,400i,600,700|Open+Sans:300,400,600,700,800,900&display=swap" rel="stylesheet" type="text/css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
@@ -23,6 +24,7 @@
     <link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
     <link rel="stylesheet" href="one-page/css/et-line.css" type="text/css" />
     <link rel="stylesheet" href="css/custom.css" type="text/css" />
+    <link rel="stylesheet" href="css/colors.php?color=00BED7" type="text/css" />
     
     <title>Rekayasa Perangkat Lunak</title>
 
@@ -37,7 +39,7 @@
 
     <div id="wrapper" class="clearfix">
 
-<!-- HEADER DAN SLIDE GAMBAR -->
+<!-- HEADER -->
     <header id="header" class="full-header transparent-header dark header-size-md" data-sticky-class="not-dark" data-responsive-class="not-dark" data-sticky-offset="full" data-sticky-offset-negative="80">
         <div id="header-wrap">
             <div class="container">
@@ -47,20 +49,13 @@
                     <a href="index.html" class="standard-logo" data-dark-logo="demos/business/images/logo-rpl.png"><img src="demos/business/images/logo-rpl.png" alt="RPL"></a>
                     <a href="index.html" class="retina-logo" data-dark-logo="demos/business/images/logo-rpl.png"><img src="demos/business/images/logo-rpl.png" alt="RPL"></a>
                 </div>
-                <!--
-                <div class="header-misc">
-                    <div id="top-search" class="header-misc-icon">
-                        <a href="#" id="top-search-trigger"><i class="icon-line-search"></i><i class="icon-line-cross"></i></a>
-                    </div>
-                </div>-->
                 <div id="primary-menu-trigger">
                     <svg class="svg-trigger" viewBox="0 0 100 100"><path d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20"></path><path d="m 30,50 h 40"></path>
                         <path d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20"></path></svg>
                 </div>
                 
-                <!-- HEADER -->
-                <nav class="primary-menu not-dark">
-                    <ul class="menu-container">
+                <nav class="primary-menu">
+                    <ul class="menu-container not-dark" style="color: #2f5e81;"> 
                         <li class="menu-item active"><a class="menu-link" href="#"><div>Beranda</div></a></li>
                         <li class="menu-item"><a class="menu-link" href="#"><div>Tentang</div></a></li>
                         <li class="menu-item"><a class="menu-link" href="#"><div>Akademik</div></a></li>
@@ -70,25 +65,21 @@
                         <li class="menu-item"><a class="menu-link" href="https://ppdb.smkn1ciamis.id/"><div>Registrasi</div></a></li>
                     </ul>
                 </nav>
-
-                <!--
-                <form class="top-search-form" action="search.html" method="get">
-                <input type="text" name="q" class="form-control" value="" placeholder="Type &amp; Hit Enter.." autocomplete="off">
-                </form>-->
-
+               
+                    <img src="demos/business/images/smk_bisa.png" width="100" height="60" alt="">
+                
                 </div>
             </div>
         </div>
     <div class="header-wrap-clone"></div>
     </header>
+<!--END HEADER-->
     
-    <!-- SLIDE GAMBAR -->
+<!-- SLIDE GAMBAR -->
     <section id="slider" class="slider-element slider-parallax swiper_wrapper min-vh-60 min-vh-md-100 include-header" data-loop="true">
         <div class="slider-inner">
             <div class="swiper-container swiper-parent">
                 <div class="swiper-wrapper">
-                <!-- Tulisan SLIDE -->    
-                <!-- Gambar SLIDE 1 -->
                 <div class="swiper-slide dark">
                     <div class="container">
                         <div class="slider-caption slider-caption-center">
@@ -100,7 +91,6 @@
                     </div>
                     <div class="swiper-slide-bg" style="background-image: url('demos/business/images/slider/1.jpg');"></div>
                 </div>
-                <!-- Gambar SLIDE 2 -->
                 <div class="swiper-slide dark">
                     <div class="container">
                         <div class="slider-caption slider-caption-center">
@@ -112,7 +102,6 @@
                     </div>
                     <div class="swiper-slide-bg" style="background-image: url('demos/business/images/slider/2.jpg');"></div>
                 </div>
-                <!-- Gambar SLIDE 3 -->
                 <div class="swiper-slide dark">
                     <div class="container">
                         <div class="slider-caption slider-caption-center">
@@ -125,77 +114,59 @@
                     <div class="swiper-slide-bg" style="background-image: url('demos/business/images/slider/3.jpg');"></div>
                 </div>
             </div>
-            
-            <!-- Panah -->
             <div class="slider-arrow-left" class="bg-transparent"><i class="icon-line-arrow-left"></i></div>
                 <div class="slider-arrow-right" class="bg-transparent"><i class="icon-line-arrow-right"></i></div>
             </div>
-            
-            <!-- animasi mouse -->
             <a href="#" data-scrollto="#content" data-offset="0" class="dark one-page-arrow"><img class="infinite animated fadeInDown" src="demos/business/images/mouse.svg" alt="Image"></a>
         </div>
     </section>
+<!-- END SLIDE GAMBAR -->
     
-<!-- CONTENT 1 -->
+<!-- BERITA -->
     <section id="content">
         <div class="content-wrap pb-0" style="z-index: 1;">
         <div class="container topmargin clearfix">
-        
-        <div class="heading-block center border-0" data-heading="RPL">
-        <h3>Rekayasa Perangkat Lunak</h3>
-        </div>
-        <div class="row clearfix">
-        <div class="center col-lg-8 offset-lg-2 bottommargin">
-        <h3 class="text-rotater font-secondary" data-separator="," data-rotate="fadeInRight" data-speed="3500">Canvas is a Powerful, Responsive &amp; Raw Multi-Purpose Multi-Page &amp; One-Page HTML5 Template. Build whatever you like with this Template. Be it <span class="d-inline"><span class="t-rotate color">Business,Corporate,Medical,Travel,Construction,Real Estate,Media Agency,Portfolio,Restaurant,Magazine,Wedding,Christmas,Blog,App Showcase</span></span><br> just everything is possible with Canvas.</h3>
-        </div>
-        <div class="clear"></div>
-        
-        <div class="row clearfix">
-            <!-- GAMBAR CONTENT 1 -->
-            <div class="col-lg-4 bottommargin-sm">
-            <div class="feature-box media-box fbox-bg">
-            <div class="fbox-media">
-            <a href="#"><img src="demos/business/images/featured/1.jpg" alt="Featured Box Image"></a>
+            <div class="row clearfix">
+                <div class="heading-block center border-0" data-heading="NEWS">
+                    <h3 style="font-size: 30px; letter-spacing: 4px;">Berita Terkini</h3>
+                </div>
+                <div class="row clearfix">
+                    <!-- GAMBAR CONTENT 2 -->
+                    <div class="col-lg-4 bottommargin-sm">
+                        <div class="feature-box media-box fbox-bg">
+                            <div class="fbox-media">
+                                <img src="demos/business/images/featured/2.jpg" alt="Featured Box Image">
+                            </div>
+                            <div class="fbox-content fbox-content-lg">
+                                <h3 class="nott ls0 fw-semibold">Apa itu Rekayasa Perangkat Lunak?
+                                    <span class="subtitle font-secondary fw-light ls0">RPL atau singkatan dari Rekayasa Perangkat Lunak adalah..</span></h3>
+                                <a href="#" class="button-link border-0 color">Selengkapnya</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- GAMBAR CONTENT 1 -->
+                    <div class="col-lg-4 bottommargin-sm">
+                        <div class="feature-box media-box fbox-bg">
+                            <div class="fbox-media">
+                                <img src="demos/business/images/featured/1.jpg" alt="Uji Komptensi">
+                            </div>
+                            <div class="fbox-content fbox-content-lg">
+                                <h3 class="nott ls0 fw-semibold">Uji Sertifikasi Kompetensi Kelas XII RPL
+                                    <span class="subtitle font-secondary fw-light ls0">Pembukaan kegiatan uji sertifikasi kompetensi kerja tahun ajaran 2021/2022 untuk kelas XII..</span></h3>
+                                <a href="#" class="button-link border-0 color">Selengkapnya</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="fbox-content fbox-content-lg">
-            <h3 class="nott ls0 fw-semibold">Retina Ready Display<span class="subtitle font-secondary fw-light ls0">Globally parallel task premium infomediaries</span></h3>
-            <a href="#" class="button-link border-0 color">Read More</a>
-            </div>
-            </div>
-            </div>
-            <!-- GAMBAR CONTENT 2 -->
-            <div class="col-lg-4 bottommargin-sm">
-            <div class="feature-box media-box fbox-bg">
-            <div class="fbox-media">
-            <a href="#"><img src="demos/business/images/featured/2.jpg" alt="Featured Box Image"></a>
-            </div>
-            <div class="fbox-content fbox-content-lg">
-            <h3 class="nott ls0 fw-semibold">Ultra Responsive Design<span class="subtitle font-secondary fw-light ls0">Energistically visualize market-driven.</span></h3>
-            <a href="#" class="button-link border-0 color">Read More</a>
-            </div>
-            </div>
-            </div>
-            <!-- GAMBAR CONTENT 3 -->
-            <div class="col-lg-4 bottommargin-sm">
-            <div class="feature-box media-box fbox-bg">
-            <div class="fbox-media">
-            <a href="#"><img src="demos/business/images/featured/3.jpg" alt="Featured Box Image"></a>
-            </div>
-            <div class="fbox-content fbox-content-lg">
-            <h3 class="nott ls0 fw-semibold">1000+ HTML Pages Included<span class="subtitle font-secondary fw-light ls0">Enthusiastically iterate enabled portals after.</span></h3>
-            <a href="#" class="button-link border-0 color">Read More</a>
-            </div>
-            </div>
-            </div>
-        </div>
-        </div>
         </div>
         <div class="line"></div>
+<!-- END berita -->
         
-<!-- Content 2 BERITA -->
+<!-- Content 2  -->
         <div class="section bg-transparent clearfix">
         <div class="container clearfix">
-        <div class="heading-block bottommargin-lg center border-0" data-heading="W">
+        <div class="heading-block bottommargin-md center border-0" data-heading="W">
         <h3 class="nott ls0">How We Work</h3>
         </div>
         </div>
@@ -241,67 +212,13 @@
                 </div>
             </div>
         </div>
-        </div>
+    </div>
+    <div class="line"></div>
+<!--END CONTENT 2-->
         
-<!-- CONTENT 3 FAKTA RPL -->
-<!--
-        <div class="section p-0 mt-0 bg-transparent clearfix" style="border-top: 1px solid #EEE; border-bottom: 1px solid #EEE;">
-        <div class="row align-items-stretch clearfix">
-        <div class="col-lg-6 center col-padding" style="background: url('demos/business/images/sections/1.jpg') center center no-repeat; background-size: cover;">
-        <div>&nbsp;</div>
-        </div>
-        <div class="col-lg-6 col-padding">
-        <div>
-            <div style="position: relative;">
-                <div class="heading-block border-0" data-heading="A">
-                <h3 class="nott ls0">About Us</h3>
-                </div>
-            </div>
-            
-            <div class="row clearfix">
-                <div class="col-lg-10 col-md-8 bottommargin">
-                    <div class="feature-box fbox-plain">
-                        <div class="fbox-icon">
-                        <a href="#"><i class="icon-et-globe"></i></a>
-                        </div>
-                        <div class="fbox-content">
-                        <h3>All over the World</h3>
-                        <p>Powerful Layout with Responsive functionality that can be adapted to any screen size. Resize browser to view.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-10 col-md-8 bottommargin">
-                    <div class="feature-box fbox-plain">
-                        <div class="fbox-icon">
-                        <a href="#"><i class="icon-et-gears"></i></a>
-                        </div>
-                        <div class="fbox-content">
-                        <h3>Fully Customisable</h3>
-                        <p>Powerful Layout with Responsive functionality that can be adapted to any screen size. Resize browser to view.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-10 col-md-8">
-                    <div class="feature-box fbox-plain">
-                        <div class="fbox-icon">
-                        <a href="#"><i class="icon-et-document"></i></a>
-                        </div>
-                        <div class="fbox-content">
-                        <h3>Helpfull Documentation</h3>
-                        <p>Powerful Layout with Responsive functionality that can be adapted to any screen size. Resize browser to view.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
-        </div>
-        </div>-->
-        
-<!-- PROJEK DAN HASIL -->
-        <!-- 
+<!-- GALERI -->
+        <!--
+        <div class="line"></div>
         <div class="section bg-transparent mb-0">
         <div class="container">
         <div class="heading-block center border-0" data-heading="O">
@@ -486,286 +403,89 @@
         </div>
         </div>-->
         
-        <!-- CONTENT 4 -->
-        <!--
-        <div class="section bg-transparent mt-0 clearfix">
-        <div class="container clearfix">
-        <div class="row justify-content-center col-mb-50">
-        <div class="col-sm-6 col-lg-4">
-        <div class="feature-box fbox-plain">
-        <div class="fbox-icon">
-        <a href="#"><img src="demos/business/images/icons/24help.svg" alt="Image"></a>
-        </div>
-        <div class="fbox-content">
-        <h3 class="nott fw-semibold ls0">Responsive Layout</h3>
-        <p>Powerful Layout with Responsive functionality that can be adapted to any screen size.</p>
-        </div>
-        </div>
-        </div>
-        <div class="col-sm-6 col-lg-4">
-        <div class="feature-box fbox-plain">
-        <div class="fbox-icon">
-        <a href="#"><img src="demos/business/images/icons/barcode.svg" alt="Image"></a>
-        </div>
-        <div class="fbox-content">
-        <h3 class="nott fw-semibold ls0">Retina Ready Graphics</h3>
-        <p>Looks beautiful &amp; ultra-sharp on Retina Displays with Retina Icons, Fonts &amp; Images.</p>
-        </div>
-        </div>
-        </div>
-        <div class="col-sm-6 col-lg-4">
-        <div class="feature-box fbox-plain">
-        <div class="fbox-icon">
-        <a href="#"><img src="demos/business/images/icons/buy.svg" alt="Image"></a>
-        </div>
-        <div class="fbox-content">
-        <h3 class="nott fw-semibold ls0">Powerful Performance</h3>
-        <p>Optimized code that are completely customizable and deliver unmatched fast performance.</p>
-        </div>
-        </div>
-        </div>
-        <div class="col-sm-6 col-lg-4">
-        <div class="feature-box fbox-plain">
-        <div class="fbox-icon">
-        <a href="#"><img src="demos/business/images/icons/card.svg" alt="Image"></a>
-        </div>
-        <div class="fbox-content">
-        <h3 class="nott fw-semibold ls0">HTML5 Video</h3>
-        <p>Canvas provides support for Native HTML5 Videos that can be added to a Full Width Background.</p>
-        </div>
-        </div>
-        </div>
-        <div class="col-sm-6 col-lg-4">
-        <div class="feature-box fbox-plain">
-        <div class="fbox-icon">
-        <a href="#"><img src="demos/business/images/icons/doc.svg" alt="Image"></a>
-        </div>
-        <div class="fbox-content">
-        <h3 class="nott fw-semibold ls0">Parallax Support</h3>
-        <p>Display your Content attractively using Parallax Sections that have unlimited customizable areas.</p>
-        </div>
-        </div>
-        </div>
-        <div class="col-sm-6 col-lg-4">
-        <div class="feature-box fbox-plain">
-        <div class="fbox-icon">
-        <a href="#"><img src="demos/business/images/icons/dropbox.svg" alt="Image"></a>
-        </div>
-        <div class="fbox-content">
-        <h3 class="nott fw-semibold ls0">Endless Possibilities</h3>
-        <p>Complete control on each &amp; every element that provides endless customization possibilities.</p>
-        </div>
-        </div>
-        </div>
-        <div class="col-sm-6 col-lg-4">
-        <div class="feature-box fbox-plain">
-        <div class="fbox-icon">
-        <a href="#"><img src="demos/business/images/icons/piggy-bank.svg" alt="Image"></a>
-        </div>
-        <div class="fbox-content">
-        <h3 class="nott fw-semibold ls0">Light &amp; Dark Color Schemes</h3>
-        <p>Change your Website's Primary Scheme instantly by simply adding the dark class to the body.</p>
-        </div>
-        </div>
-        </div>
-        <div class="col-sm-6 col-lg-4">
-        <div class="feature-box fbox-plain">
-        <div class="fbox-icon">
-        <a href="#"><img src="demos/business/images/icons/home.svg" alt="Image"></a>
-        </div>
-        <div class="fbox-content">
-        <h3 class="nott fw-semibold ls0">Boxed &amp; Wide Layouts</h3>
-        <p>Stretch your Website to the Full Width or make it boxed to surprise your visitors.</p>
-        </div>
-        </div>
-        </div>
-        <div class="col-sm-6 col-lg-4">
-        <div class="feature-box fbox-plain">
-        <div class="fbox-icon">
-        <a href="#"><img src="demos/business/images/icons/offers.svg" alt="Image"></a>
-        </div>
-        <div class="fbox-content">
-        <h3 class="nott fw-semibold ls0">Extensive Documentation</h3>
-        <p>We have covered each &amp; everything in our Documentation including Videos &amp; Screenshots.</p>
-        </div>
-        </div>
-        </div>
-        </div>-->
-    
-        <!--
-        <div class="line"></div>
-        <div class="row topmargin-lg clearfix">
-        <div class="col-lg-6 p-0">
-        
-        <a href="https://www.youtube.com/watch?v=NS0txu_Kzl8" data-lightbox="iframe">
-        <img src="demos/business/images/sections/video.jpg" alt="Youtube Video" style="box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.15); border-radius: 6px;">
-        <i class="icon-play" style="position: absolute; top: 50%; left: 50%; font-size: 60px; color: #FFF; margin-top: -45px; margin-left: -23px"></i>
-        </a>
-        </div>
-        
-        <div class="col-lg-6" style="padding-left: 60px;">
-        <div class="heading-block topmargin-sm bottommargin-sm border-0">
-        <h3 class="nott" style="font-size: 46px; font-weight: 700; letter-spacing: -2px; line-height: 58px">A small Video from Our Customers.</h3>
-        </div>
-        <p class="fw-normal">Interactively facilitate.<br>Tactical systems with compelling materials. Objectively re-engineer diverse relationships long-term impact methodologies.</p>
-        <h5 class="mb-0 fw-semibold">&middot; SemiColonWeb - Author, Themeforest Market. <a href="#"><img src="demos/business/images/tf-logo.png" height="18" alt="Image" style="margin-left: 4px"></a></h5>
-        <a href="#" class="button-link bottommargin">Read More</a>
-        </div>
-        </div>
-        </div>
-        </div>-->
+<!--FAKTA RPL-->
+<div id="section" style="background-color: #2f5e81;">
+    <div class="section bg-transparent mt-0 clearfix">
+        <div class="container clearfix" style="background-color: #2f5e81; margin-bottom: 7px;">
+            <div class="row justify-content-cente mt-0 p-0">
+                <h3 class="nott fw-semibold center text-white" style="font-size: 45px;">Fakta Jurusan RPL</h3>
+                <div class="col-sm-5 col-lg-3">
+                    <div class="feature-box fbox-center fbox-plain">
+                        <div class="fbox-icon">
+                            <img src="demos/business/images/icons/icon-siswa.png" alt="Image">
+                        </div>
+                        <div class="fbox-content">
+                            <h3 class="nott fw-semibold text-1">105</h3>
+                            <h3 class="nott fw-semibold text-2">Jumlah Siswa</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-lg-3">
+                    <div class="feature-box fbox-center fbox-plain">
+                        <div class="fbox-icon">
+                            <img src="demos/business/images/icons/icon-buku.png" alt="Image">
+                        </div>
+                        <div class="fbox-content">
+                            <h3 class="nott fw-semibold text-1">6</h3>
+                            <h3 class="nott fw-semibold text-2">Mata Pelajaran</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-lg-3">
+                    <div class="feature-box fbox-center fbox-plain">
+                        <div class="fbox-icon">
+                            <img src="demos/business/images/icons/icon-tropi.png" alt="Image">
+                        </div>
+                        <div class="fbox-content">
+                            <h3 class="nott fw-semibold text-1">A</h3>
+                            <h3 class="nott fw-semibold text-2">Kreditasi Nasional</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-lg-3">
+                    <div class="feature-box fbox-center fbox-plain">
+                        <div class="fbox-icon">
+                            <img src="demos/business/images/icons/icon-grafik.png" alt="Image">
+                        </div>
+                        <div class="fbox-content">
+                            <h3 class="nott fw-semibold text-1">70%</h3>
+                            <h3 class="nott fw-semibold text-2">Berperan di Sekolah</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+</div>
+<div class="line"></div>
+<!--END Fakta RPL-->
 
-        <!--
-        <div class="section parallax topmargin-lg mb-0 border-top-0 clearfix" style="background-image: url('demos/business/images/sections/2.jpg'); background-size: cover;" data-bottom-top="background-position:0px 300px;" data-top-bottom="background-position:0px -300px;">
-        <div class="container clearfix">
-        <div class="row col-mb-50 cleafix">
-        <div class="col-md-6 dark" style="padding-left: 60px;">
-        <div class="heading-block bottommargin-sm border-0">
-        <h3 class="nott" style="font-size: 46px; font-weight: 700; letter-spacing: -2px; line-height: 58px">Collections from Our Customers.</h3>
-        </div>
-        <p>Appropriately implement user friendly e-markets and backend processes. Competently expedite competitive vortals rather than client-based testing procedures. Professionally matrix exceptional schemas vis-a-vis leveraged paradigms. Authoritatively coordinate just in time networks with strategic potentialities.</p>
-        <a href="#" class="button-link ms-0">Read More</a>
-        </div>
-        
-        <div class="col-md-5 offset-md-1">
-        <h4 class="dark">Testimonials Scroller</h4>
-        <div class="fslider testimonial" data-animation="slide" data-arrows="false">
-        <div class="flexslider">
-        <div class="slider-wrap">
-        <div class="slide">
-        <div class="testimonial border-0 shadow-none">
-        <div class="testi-content">
-        <p class="bottommargin-sm font-primary">Great support, great documentation and you guys done a fantastic job in commenting everything, makes it very easy to customize, so thank you.</p>
-        <div class="testi-meta">
-        SmileyDot
-        <span>ThemeForest user</span>
-        <div class="testimonials-rating">
-        <i class="icon-star3"></i>
-        <i class="icon-star3"></i>
-        <i class="icon-star3"></i>
-        <i class="icon-star3"></i>
-        <i class="icon-star3"></i>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        <div class="slide">
-        <div class="testimonial border-0 shadow-none">
-        <div class="testi-content">
-        <p class="bottommargin-sm font-primary">I wish that I could choose more than one reason for my 5-star rating! The Design is great, the features are fantastic, the documentation top-notch.</p>
-        <div class="testi-meta">
-        georgewhoffman
-        <span>ThemeForest user</span>
-        <div class="testimonials-rating">
-        <i class="icon-star3"></i>
-        <i class="icon-star3"></i>
-        <i class="icon-star3"></i>
-        <i class="icon-star3"></i>
-        <i class="icon-star3"></i>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        <div class="slide">
-        <div class="testimonial border-0 shadow-none">
-        <div class="testi-content">
-        <p class="bottommargin-sm font-primary">Excellent Template really versatile and well documented. Makes anyone look like a design professional.</p>
-        <div class="testi-meta">
-        georgeuser077
-        <span>ThemeForest user</span>
-        <div class="testimonials-rating">
-        <i class="icon-star3"></i>
-        <i class="icon-star3"></i>
-        <i class="icon-star3"></i>
-        <i class="icon-star3"></i>
-        <i class="icon-star3"></i>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        <div class="slide">
-        <div class="testimonial border-0 shadow-none">
-        <div class="testi-content">
-        <p class="bottommargin-sm font-primary">This is the most robust template I've ever worked with. So much can be done with this multi-purpose package. Regular updates and enhancements add tremendous value.</p>
-        <div class="testi-meta">
-        rmandaro
-        <span>ThemeForest user</span>
-        <div class="testimonials-rating">
-        <i class="icon-star3"></i>
-        <i class="icon-star3"></i>
-        <i class="icon-star3"></i>
-        <i class="icon-star3"></i>
-        <i class="icon-star3"></i>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        <div class="slide">
-        <div class="testimonial border-0 shadow-none">
-        <div class="testi-content">
-        <p class="bottommargin-sm font-primary">I've been using Canvas for months now and it has exceeded my expectations. Their support has been great too.</p>
-        <div class="testi-meta">
-        kwelch2
-        <span>ThemeForest user</span>
-        <div class="testimonials-rating">
-        <i class="icon-star3"></i>
-        <i class="icon-star3"></i>
-        <i class="icon-star3"></i>
-        <i class="icon-star3"></i>
-        <i class="icon-star3"></i>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
 
-        </div>
-        </div>
-        </div>-->
-        <div class="line"></div>
-        <!--AJAKAN BERGABUNG-->
+
+<!--AJAKAN BERGABUNG-->
         <div class="section bg-transparent pb-0 mb-0">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-5 order-lg-12">
-                        <div class="device-xl device-md topmargin-lg"></div>
+                    <div class="col-lg-6 order-lg-10">
+                        <div class="device-xl device-md "></div>
                         <h3 class="mb-0" style="font-size: 40px;">BERGABUNG BERSAMA RPL (Programmer).</h3>
                         <h3 class="fw-light ls4 text-capitalize" style="font-size: 18px; color: rgb(226, 75, 75);">Jurusan Terbaik di Ciamis</h3><br>
                         <img src="demos/business/images/smk_bisa.png" alt="Image" height="150" width="200" style="margin-top: -30px"><br><br>
                         <a href="https://ppdb.smkn1ciamis.id/" class="button button-rounded button-small nott ls0 font-primary">Daftar Sekarang</a>
                     </div>
-                    <div class="col-lg-7 order-lg-1">
-                        <div style="position: relative; margin-bottom: 0;" class="overflow-hidden" data-height-xl="500" data-height-lg="520" data-height-md="520" data-height-sm="500" data-height-xs="300">
+                    <div class="col-lg-5 order-lg-2">
+                        <div style=" margin-bottom: 0;" class="overflow-hidden" data-height-xl="500" data-height-lg="520" data-height-md="520" data-height-sm="500" data-height-xs="300">
                         <img class="man" src="demos/business/images/sections/workingImg.png" style="position: absolute; top: 0; left: auto;" alt="Chrome">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        
-        <!--
-        <div class="section m-0 clearfix" style="padding: 80px 0">
-        <div id="oc-clients-full" class="owl-carousel owl-carousel-full image-carousel carousel-widget" data-margin="0" data-nav="false" data-pagi="false" data-loop="true" data-autoplay="3000" data-items-xs="2" data-items-sm="3" data-items-md="5" data-items-lg="5" data-items-xl="5">
-        <div class="oc-item"><a href="#"><img src="demos/business/images/clients/linkedin.svg" style="height: 24px" alt="Brands"></a></div>
-        <div class="oc-item"><a href="#"><img src="demos/business/images/clients/nat-geo.svg" style="height: 24px" alt="Brands"></a></div>
-        <div class="oc-item"><a href="#"><img src="demos/business/images/clients/jetblue.svg" style="height: 24px" alt="Brands"></a></div>
-        <div class="oc-item"><a href="#"><img src="demos/business/images/clients/zillow.svg" style="height: 24px" alt="Brands"></a></div>
-        <div class="oc-item"><a href="#"><img src="demos/business/images/clients/amazon.svg" style="height: 24px" alt="Brands"></a></div>
-        </div>
-        </div>-->
+   
+<div class="line"></div>
+<!--END ajakan bergabung-->
 
-        </div>
-    </section>
-    <div class="line"></div>
-    <!-- FOOTER -->
+<!-- FOOTER -->
     <footer id="footer" class="border-0" style="padding: 30px 0; background-color: whitesmoke">
         <div class="container clearfix">
             <div class="footer-widgets-wrap">
@@ -843,7 +563,7 @@
             </div>
         </div>
     </footer>
-    </div>
+   
     
     <div id="gotoTop" class="icon-angle-up"></div>
     
