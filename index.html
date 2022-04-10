@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,400i,600,700|Open+Sans:300,400,600,700,800,900&display=swap" rel="stylesheet" type="text/css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
-    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
     <link rel="stylesheet" href="css/dark.css" type="text/css" />
     <link rel="stylesheet" href="css/swiper.css" type="text/css" />
 
@@ -40,7 +40,7 @@
     <div id="wrapper" class="clearfix">
 
 <!-- HEADER -->
-    <header id="header" class="full-header transparent-header dark header-size-md" data-sticky-class="not-dark" data-responsive-class="not-dark" data-sticky-offset="full" data-sticky-offset-negative="80">
+    <header id="header" class="full-header header-size-md" data-sticky-class="not-dark" data-responsive-class="not-dark" data-sticky-offset="full" data-sticky-offset-negative="80">
         <div id="header-wrap">
             <div class="container">
                 <div class="header-row">
@@ -49,11 +49,15 @@
                     <a href="index.html" class="standard-logo" data-dark-logo="demos/business/images/logo-rpl.png"><img src="demos/business/images/logo-rpl.png" alt="RPL"></a>
                     <a href="index.html" class="retina-logo" data-dark-logo="demos/business/images/logo-rpl.png"><img src="demos/business/images/logo-rpl.png" alt="RPL"></a>
                 </div>
+                <div class="header-misc">
+                    <div id="top-search" class="header-misc-icon">
+                     <a href="#" id="top-search-trigger"><i class="icon-line-search"></i><i class="icon-line-cross"></i></a>
+                    </div>
+                </div>
                 <div id="primary-menu-trigger">
                     <svg class="svg-trigger" viewBox="0 0 100 100"><path d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20"></path><path d="m 30,50 h 40"></path>
                         <path d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20"></path></svg>
                 </div>
-                
                 <nav class="primary-menu">
                     <ul class="menu-container not-dark" style="color: #2f5e81;"> 
                         <li class="menu-item active"><a class="menu-link" href="#"><div>Beranda</div></a></li>
@@ -65,62 +69,68 @@
                         <li class="menu-item"><a class="menu-link" href="https://ppdb.smkn1ciamis.id/"><div>Registrasi</div></a></li>
                     </ul>
                 </nav>
-               
-                    <img src="demos/business/images/smk_bisa.png" width="100" height="60" alt="">
-                
+                <form class="top-search-form" action="search.html" method="get">
+                    <input type="text" name="q" class="form-control" value="" placeholder="Type &amp; Hit Enter.." autocomplete="off">
+                </form>
                 </div>
             </div>
         </div>
     <div class="header-wrap-clone"></div>
     </header>
 <!--END HEADER-->
-    
+
+
 <!-- SLIDE GAMBAR -->
-    <section id="slider" class="slider-element slider-parallax swiper_wrapper min-vh-60 min-vh-md-100 include-header" data-loop="true">
-        <div class="slider-inner">
-            <div class="swiper-container swiper-parent">
-                <div class="swiper-wrapper">
-                <div class="swiper-slide dark">
-                    <div class="container">
-                        <div class="slider-caption slider-caption-center">
-                            <div>
-                            <h2 class="font-primary nott">Creative Work</h2>
-                            <p class="fw-light font-primary d-none d-sm-block">Quickly communicate bleeding-edge best practices.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide-bg" style="background-image: url('demos/business/images/slider/1.jpg');"></div>
+<!--
+<section id="slider" class="slider-element slider-parallax swiper_wrapper min-vh-60 min-vh-md-100 include-header" data-loop="true">
+    <div class="slider-inner">
+        <div class="swiper-container swiper-parent">
+            <div class="swiper-wrapper">
+            <div class="swiper-slide dark">
+                <div class="container">
                 </div>
-                <div class="swiper-slide dark">
-                    <div class="container">
-                        <div class="slider-caption slider-caption-center">
-                            <div>
-                                <h2 class="font-primary">Amazing Prospects.</h2>
-                                <p class="fw-light font-primary d-none d-sm-block">Seamlessly engineer effective synergy after e-business experiences.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide-bg" style="background-image: url('demos/business/images/slider/2.jpg');"></div>
-                </div>
-                <div class="swiper-slide dark">
-                    <div class="container">
-                        <div class="slider-caption slider-caption-center">
-                        <div>
-                            <h2 class="font-primary">Flexible Works.</h2>
-                            <p class="fw-light font-primary d-none d-sm-block">Completely incubate worldwide users before imperatives.</p>
-                        </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide-bg" style="background-image: url('demos/business/images/slider/3.jpg');"></div>
+                <div class="swiper-slide-bg" style="background-image: url('demos/business/images/slider/1.jpg');">
+                    <img src="demos/business/images/slider/1.jpg" alt="">
                 </div>
             </div>
-            <div class="slider-arrow-left" class="bg-transparent"><i class="icon-line-arrow-left"></i></div>
-                <div class="slider-arrow-right" class="bg-transparent"><i class="icon-line-arrow-right"></i></div>
+            <div class="swiper-slide dark">
+                <div class="container">
+                </div>
+                <div class="swiper-slide-bg" style="background-image: url('demos/business/images/slider/2.jpg');">
+                    <img src="demos/business/images/slider/2.jpg" alt="">
+                </div>
             </div>
-            <a href="#" data-scrollto="#content" data-offset="0" class="dark one-page-arrow"><img class="infinite animated fadeInDown" src="demos/business/images/mouse.svg" alt="Image"></a>
         </div>
-    </section>
+        <div class="slider-arrow-left" class="bg-transparent"><i class="icon-line-arrow-left"></i></div>
+        <div class="slider-arrow-right" class="bg-transparent"><i class="icon-line-arrow-right"></i></div>
+        </div>
+    </div>
+</section>
+-->
 <!-- END SLIDE GAMBAR -->
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="demos/business/images/slider/1.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="demos/business/images/slider/2.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
     
 <!-- BERITA -->
     <section id="content">
@@ -130,9 +140,9 @@
                 <div class="heading-block center border-0" data-heading="NEWS">
                     <h3 style="font-size: 30px; letter-spacing: 4px;">Berita Terkini</h3>
                 </div>
-                <div class="row clearfix">
+                <div class="row clearfix ">
                     <!-- GAMBAR CONTENT 2 -->
-                    <div class="col-lg-4 bottommargin-sm">
+                    <div class="col-lg-4" >
                         <div class="feature-box media-box fbox-bg">
                             <div class="fbox-media">
                                 <img src="demos/business/images/featured/2.jpg" alt="Featured Box Image">
@@ -145,7 +155,7 @@
                         </div>
                     </div>
                     <!-- GAMBAR CONTENT 1 -->
-                    <div class="col-lg-4 bottommargin-sm">
+                    <div class="col-lg-4 ">
                         <div class="feature-box media-box fbox-bg">
                             <div class="fbox-media">
                                 <img src="demos/business/images/featured/1.jpg" alt="Uji Komptensi">
@@ -153,6 +163,19 @@
                             <div class="fbox-content fbox-content-lg">
                                 <h3 class="nott ls0 fw-semibold">Uji Sertifikasi Kompetensi Kelas XII RPL
                                     <span class="subtitle font-secondary fw-light ls0">Pembukaan kegiatan uji sertifikasi kompetensi kerja tahun ajaran 2021/2022 untuk kelas XII..</span></h3>
+                                <a href="#" class="button-link border-0 color">Selengkapnya</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- GAMBAR CONTENT 2 -->
+                    <div class="col-lg-4">
+                        <div class="feature-box media-box fbox-bg">
+                            <div class="fbox-media">
+                                <img src="demos/business/images/featured/2.jpg" alt="Featured Box Image">
+                            </div>
+                            <div class="fbox-content fbox-content-lg">
+                                <h3 class="nott ls0 fw-semibold">Apa itu Rekayasa Perangkat Lunak?
+                                    <span class="subtitle font-secondary fw-light ls0">RPL atau singkatan dari Rekayasa Perangkat Lunak adalah..</span></h3>
                                 <a href="#" class="button-link border-0 color">Selengkapnya</a>
                             </div>
                         </div>
@@ -165,10 +188,10 @@
         
 <!-- Content 2  -->
         <div class="section bg-transparent clearfix">
-        <div class="container clearfix">
-        <div class="heading-block bottommargin-md center border-0" data-heading="W">
-        <h3 class="nott ls0">How We Work</h3>
-        </div>
+        <div class="container clearfix" >
+            <div class="heading-block center border-0" data-heading="W">
+            <h3 class="nott 2s0" style="font-size: 30px;">How We Work</h3>
+            </div>
         </div>
         
         <div id="oc-features" class="owl-carousel owl-carousel-full image-carousel carousel-widget customjs">
@@ -403,11 +426,11 @@
         </div>
         </div>-->
         
-<!--FAKTA RPL-->
+<!--FAKTA RPL--> <br>
 <div id="section" style="background-color: #2f5e81;">
     <div class="section bg-transparent mt-0 clearfix">
         <div class="container clearfix" style="background-color: #2f5e81; margin-bottom: 7px;">
-            <div class="row justify-content-cente mt-0 p-0">
+            <div class="row justify-content-around mt-0 p-0">
                 <h3 class="nott fw-semibold center text-white" style="font-size: 45px;">Fakta Jurusan RPL</h3>
                 <div class="col-sm-5 col-lg-3">
                     <div class="feature-box fbox-center fbox-plain">
@@ -466,18 +489,6 @@
         <div class="section bg-transparent pb-0 mb-0">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6 order-lg-10">
-                        <div class="device-xl device-md "></div>
-                        <h3 class="mb-0" style="font-size: 40px;">BERGABUNG BERSAMA RPL (Programmer).</h3>
-                        <h3 class="fw-light ls4 text-capitalize" style="font-size: 18px; color: rgb(226, 75, 75);">Jurusan Terbaik di Ciamis</h3><br>
-                        <img src="demos/business/images/smk_bisa.png" alt="Image" height="150" width="200" style="margin-top: -30px"><br><br>
-                        <a href="https://ppdb.smkn1ciamis.id/" class="button button-rounded button-small nott ls0 font-primary">Daftar Sekarang</a>
-                    </div>
-                    <div class="col-lg-5 order-lg-2">
-                        <div style=" margin-bottom: 0;" class="overflow-hidden" data-height-xl="500" data-height-lg="520" data-height-md="520" data-height-sm="500" data-height-xs="300">
-                        <img class="man" src="demos/business/images/sections/workingImg.png" style="position: absolute; top: 0; left: auto;" alt="Chrome">
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -486,82 +497,46 @@
 <!--END ajakan bergabung-->
 
 <!-- FOOTER -->
-    <footer id="footer" class="border-0" style="padding: 30px 0; background-color: whitesmoke">
-        <div class="container clearfix">
-            <div class="footer-widgets-wrap">
-                <div class="row col-mb-50">
-                    <!--LOGO RPL-->
-                    <div class="col-md-3">
-                        <img src="demos/business/images/logo-rpl.png" alt="Image" height="120"  style="margin-top: -18px">
+    <footer id="footer">
+
+        <div id="copyrights">
+        <div class="container">
+            <div class="row justify-content-between col-mb-20">
+                <div class="col-12 col-lg-auto text-center text-lg-start order-last order-lg-first">
+                    <div class="copyrights-menu copyright-links">
+                        <h5 style="color: #555;">KONTAK</h5>
                     </div>
-
-                    <div class="col-md-9">
-                        <div class="row col-mb-30">
-                            <!--KONTAK-->
-                            <div class="col-sm-6 col-lg-4">
-                            <div class="widget widget_links widget-li-noicon clearfix">
-                            <h4>KONTAK</h4>
-                            <ul>
-                            <li><a href="#">Jl.Jendral Soedirman No.269 Ciamis,Jawa Barat 46215 Indonesia</a></li>
-                            </ul>
-                            </div>
-                            </div>
-
-                            <div class="col-sm-6 col-lg-4">
-                            <div class="widget widget_links widget-li-noicon clearfix">
-                            <h4>LINK TERKAIT</h4>
-                            <ul>
-                            <li><a href="#">SMKN 1 CIAMIS</a></li>
-                            </ul>
-                            </div>
-                            </div>
-
-                            <div class="col-sm-6 col-lg-4">
-                            <div class="widget widget_links widget-li-noicon clearfix">
-                            <h4>MENU</h4>
-                            <ul>
-                            <li><a href="#">Beranda</a></li>
-                            <li><a href="#">Tentang</a></li>
-                            <li><a href="#">Akademik</a></li>
-                            <li><a href="#">Berita</a></li>
-                            <li><a href="#">Projek & Hasil</a></li>
-                            <li><a href="#">Galeri</a></li>
-                            <li><a href="#">Registrasi</a></li>
-                            </ul>
-                            </div>
-                            </div>
-                        </div>
-
-                        <!--footer sosmed-->
-                        <div class="line line-sm"></div>
-                        <div class="row justify-content-between col-mb-15">
-                            <div class="col-12 col-md-auto text-center text-md-start">
-                                <small class="fw-light" style="color: rgb(88, 88, 88)">Copyrights &copy; 2020 All Rights Reserved by Canvas Inc.</small>
-                            </div>
-                            <div class="col-12 col-md-auto text-center text-md-end">
-                                <a href="#" class="social-icon inline-block si-mini si-rounded si-colored si-facebook">
-                                <i class="icon-facebook"></i>
-                                <i class="icon-facebook"></i>
-                                </a>
-                                <a href="#" class="social-icon inline-block si-mini si-rounded si-colored si-gplus">
-                                <i class="icon-gplus"></i>
-                                <i class="icon-gplus"></i>
-                                </a>
-                                <a href="#" class="social-icon inline-block si-mini si-rounded si-colored si-youtube">
-                                <i class="icon-pinterest"></i>
-                                <i class="icon-pinterest"></i>
-                                </a>
-                                <a href="#" class="social-icon inline-block si-mini si-rounded si-colored si-instagram">
-                                <i class="icon-instagram"></i>
-                                <i class="icon-instagram"></i>
-                                </a>
-                            </div>
-                        </div>
+                    <a href="#" class="copyright-menu copyright-links" style="color: #555;">
+                        Jl.Jendral Soedirman No.269 Ciamis,Jawa Barat 46215 Indonesia
+                    </a>
+                </div>
+                <div class="col-12 col-lg-auto text-center text-lg-end">
+                    <div class="copyrights-menu copyright-links">
+                        <a href="#">Beranda</a>/<a href="#">Tentang</a>/<a href="#">Akademik</a>/<a href="#">Berita</a>/<a href="#">Projek</a>/<a href="#">Galeri</a>
                     </div>
-                
+                    <a href="#" class="social-icon inline-block size-lg si-borderless mb-0 si-facebook">
+                        <i class="icon-facebook-square"></i>
+                        <i class="icon-facebook"></i>
+                    </a>
+                    <a href="#" class="social-icon inline-block size-lg si-borderless mb-0 si-gplus">
+                        <i class="icon-google-plus-g"></i>
+                        <i class="icon-google-plus-square"></i>
+                    </a>
+                    <a href="#" class="social-icon inline-block size-lg si-borderless mb-0 si-youtube">
+                        <i class="icon-youtube"></i>
+                        <i class="icon-youtube"></i>
+                    </a>
+                    <a href="#" class="social-icon inline-block size-lg si-borderless mb-0 si-instagram">
+                        <i class="icon-instagram"></i>
+                        <i class="icon-instagram"></i>
+                    </a>
                 </div>
             </div>
         </div>
+        </div>   
+        <div class="container text-center p-2">
+            Copyrights &copy; 2020 All Rights Reserved by Canvas Inc.
+        </div> 
     </footer>
    
     
