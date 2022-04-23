@@ -14,10 +14,10 @@
 
 	.menu-container > .menu-item > .menu-link div { position: relative; }
 
-	.menu-container > .menu-item > .menu-link div::after {
+	.menu-container > .menu-item > .menu-link ::after {
 		opacity: 0;
 		content: '';
-		background : url('images/border.svg') no-repeat;
+		background-color: #f88d2f;
 		position: absolute;
 		bottom: -3px;
 		left: 0;
@@ -30,7 +30,7 @@
 		transition: all .3s ease;
 	}
 
-	.dark .menu-container > .menu-item > .menu-link div::after { background: image('images/border-white.png') no-repeat; }
+	.dark .menu-container > .menu-item > .menu-link::after { background: image('images/border-white.png') no-repeat; }
 
 	.menu-container > .menu-item.active > .menu-link > div::after,
 	.menu-container > .menu-item:hover > .menu-link > div::after {
